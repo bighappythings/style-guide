@@ -1,0 +1,65 @@
+body {
+  font-family: "Plus Jakarta Sans", "Tajawal", sans-serif;
+  background: #ffffff;
+}
+
+/*main level elements*/
+.main-heading {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+}
+
+.grid {
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 15px);
+}
+
+.grid_elem {
+  position: relative;
+  display: inline-block;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 9rem;
+  margin: 20px;
+  border: 10px solid #4caf50;
+  box-shadow: inset 0 0 7px grey;
+  border-left-color: #4caf50;
+  border-top-color: #4caf50;
+  border-right-color: #4caf50;
+  border-bottom-color: white;
+  text-align: center;
+  box-sizing: border-box;
+}
+.grid_elem:nth-child(2) {
+  border-top-color: #64b5f6;
+  border-right-color: white;
+  border-left-color: #64b5f6;
+  border-bottom-color: white;
+}
+
+.grid_elem:nth-child(3) {
+  border-top-color: white;
+  border-right-color: white;
+  border-left-color: #fdd835;
+  border-bottom-color: white;
+}
+
+.grid_elem > .grid_elem_value {
+  top: 40px;
+  position: absolute;
+  left: 10px;
+  right: 0;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.grid_elem > .grid_elem_label {
+  left: 0;
+  bottom: -16px;
+  color: black;
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+}

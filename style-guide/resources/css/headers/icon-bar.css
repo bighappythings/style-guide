@@ -1,0 +1,26 @@
+body {
+  font-family: "Plus Jakarta Sans", "Tajawal", sans-serif;
+  background: #ffffff;
+  margin: 0;
+}
+
+.nav {
+  width: 100%;
+  background-color: #37474f;
+  color: #ffffff;
+  overflow: auto;
+}
+.nav_link {
+  float: left;
+  text-align: centre;
+  width: auto;
+  padding: 20px;
+  transition: all 0.3s ease;
+  color: #ffffff;
+  font-size: 24px;
+}
+.nav_link:hover,
+.nav_link:focus,
+.nav_link:active {
+  background: #000000;
+}

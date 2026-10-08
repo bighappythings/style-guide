@@ -1,0 +1,61 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<div class="container">
+<div class="tabs">
+  <h2 id="tablist-1" class="h2">Example Tabs Manual</h2>
+  <div role="tablist" aria-labelledby="tablist-1" class="manual">
+    <button id="tab-1" class="manual tabs_buttons_button" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
+      <span class="focus">Test tab 1</span>
+    </button>
+    <button id="tab-2" class="manual tabs_buttons_button" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
+      <span class="focus">test tab 2</span>
+    </button>
+    <button id="tab-3" class="manual tabs_buttons_button" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">
+      <span class="focus">test tab 3</span>
+    </button>
+  </div>
+
+  <div id="tabpanel-1" class="manual tabs_panel" role="tabpanel" aria-labelledby="tab-1">
+    <p>Test tab 1 content</p>
+  </div>
+  <div id="tabpanel-2" class="manual tabs_panel" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
+    <p>Test tab 2 content</p>
+  </div>
+  <div id="tabpanel-3" class="manual tabs_panel" role="tabpanel" aria-labelledby="tab-3" class="is-hidden">
+    <p>Test tab 3 content</p>
+  </div>
+</div>
+
+  <h2 id="accordion-panel-heading" class="h2">Accordion heading</h2>
+    <div class="accordion" id="accordion-panel">
+        <h3 class="accordion-title-outer">
+            <button aria-expanded="false" class="accordion-trigger" aria-controls="accordion-panel-1-section" id="accordion-panel-1-label" role="button" accordion-section-title="Test header 1" accordion-title="Accordion heading">
+                <span class="accordion-title">Test header 1<span class="accordion-icon"></span></span>
+            </button>
+        </h3>
+        <div class="accordion-panel" role="region" id="accordion-panel-1-section" aria-labelledby="accordion-panel-1-label" style="display: none;" hidden="">
+            <div>
+                <p>Test panel 1 content</p>
+            </div>
+        </div>
+        <h3 class="accordion-title-outer">
+            <button aria-expanded="false" class="accordion-trigger" aria-controls="accordion-panel-2-section" id="accordion-panel-2-label" role="button" accordion-section-title="Test header 2" accordion-title="Accordion heading"><span class="accordion-title">Test header 2<span class="accordion-icon"></span></span>
+            </button>
+        </h3>
+        <div class="accordion-panel" role="region" id="accordion-panel-2-section" aria-labelledby="accordion-panel-2-label" hidden="">
+            <div>
+                <p>Test panel 2 content</p>
+            </div>
+        </div>
+        <h3 class="accordion-title-outer">
+                <button aria-expanded="false" class="accordion-trigger" aria-controls="accordion-panel-3-section" id="accordion-panel-3-label" role="button" accordion-section-title="Test header 3" accordion-title="Accordion heading"><span class="accordion-title">Test header 3<span class="accordion-icon"></span></span>
+                </button>
+        </h3>
+        <div class="accordion-panel" role="region" id="accordion-panel-3-section" aria-labelledby="accordion-panel-3-label" hidden="">
+            <div>
+                <p>Test panel 3 content</p>
+            </div>
+        </div>
+    </div>
+</div>        

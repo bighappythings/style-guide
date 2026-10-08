@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fc01ecf1a.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Navigation</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="nav_link nav_link-home active" href="#">Home</a>
+      
+      <a class="nav_link" href="#">Contact</a>
+      <a class="nav_link" href="#">Products</a>
+      <a class="nav_link" href="#">News</a>
+      
+      <input class="nav_search" type="text" id="search" onkeyup="search()" placeholder="Search..." title="Type a category">
+      
+      <button class="nav_link nav_link-menu" href="#" aria-label="menu" onclick="mobileMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="nav-mobile">
+          <a class="nav-mobile_link" href="#">Contact</a>
+          <a class="nav-mobile_link" href="#">Products</a>
+          <a class="nav-mobile_link" href="#">News</a>
+      </div>
+    </nav>
+
+    <div class="main">
+      
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

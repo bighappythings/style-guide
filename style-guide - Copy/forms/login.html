@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container container-centre">
+      <form class="container_form" action="#">
+        
+        <h1 class="h1">Sign In</h1>
+
+        <p>Don't have an account? <a href="">Register</a></p>
+        
+        <label class="container_form_label" for="username">Username<span class="required">*</span></label>
+        <input class="container_form_input" type="text" id="username" required maxlength="16">
+        
+        <label class="container_form_label" for="password" >Password<span class="required">*</span></label>
+        <input class="container_form_input" 
+          type="password" 
+          id="password" 
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+          minlength="8"
+          required>
+
+        <div id="error_password" class="error">
+          <h2 class="h3">Password must contain the following:</h2>
+          <ul>
+            <li id="letter">A lowercase letter</li>
+            <li id="capital">An uppercase letter</li>
+            <li id="number">A number</li>
+            <li id="specialChar">A special character</li>
+            <li id="min">It must contain a minimum of 8 characters</li>
+          </ul>
+          
+        </div>  
+
+        <p><a href="#">Forgot your password?</a></p>
+        
+        <input class="container_form_submit" type="submit" value="Log in"/>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
